@@ -1,0 +1,8 @@
+# Ignorar archivos locales y configuraciones
+.env
+.tmp/
+node_modules/
+.DS_Store
+Thumbs.db
+directivas/
+*.log

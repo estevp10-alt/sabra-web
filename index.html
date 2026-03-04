@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabra Agency – Automatización IA para Clínicas Dentales en Madrid</title>
+    <meta name="description"
+        content="Llenamos la agenda de tu clínica dental en Madrid con pacientes reales. Automatización con IA: citas 24/7, reducción de no-shows y captación continua de nuevos pacientes.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Particles Background -->
+    <div id="particles-container"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="images/logo-blanco.png" alt="Sabra Agency Logo" class="logo-img">
+                <span class="logo-text">Sabra Agency</span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                <li><a href="#beneficios" class="nav-link">Beneficios</a></li>
+                <li><a href="#casos" class="nav-link">Resultados</a></li>
+                <li><a href="#contacto" class="btn-primary-small">Diagnóstico Gratuito</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <!-- Hero label removed as requested -->
+                <h1 class="hero-title">
+                    Tu clínica dental en Madrid <span class="gradient-text">llena de pacientes, sin depender de
+                        ti</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Automatizamos la captación, las citas y la fidelización de pacientes con IA.
+                    Más pacientes cada mes, menos tiempo perdido en gestión y llamadas sin respuesta.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contacto" class="btn-primary">Quiero Más Pacientes</a>
+                    <a href="#casos" class="btn-secondary">Ver Resultados Reales</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="73">0</span><span class="stat-symbol">%</span>
+                        <span class="stat-label">Reducción de no-shows</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="24">0</span><span class="stat-symbol">/7</span>
+                        <span class="stat-label">Citas automatizadas</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="120">0</span><span class="stat-symbol">+</span>
+                        <span class="stat-label">Clínicas en Madrid</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="sphere-container">
+                    <div class="sphere">
+                        <div class="sphere-inner"></div>
+                        <div class="sphere-ring ring-1"></div>
+                        <div class="sphere-ring ring-2"></div>
+                        <div class="sphere-ring ring-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sistemas que trabajan <span class="gradient-text">por tu clínica</span></h2>
+                <p class="section-subtitle">Automatización integral para captar, retener y reactivar pacientes</p>
+            </div>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card-flip">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="service-icon">
+                                <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                                    <circle cx="32" cy="32" r="28" stroke="url(#gradient1)" stroke-width="2" />
+                                    <path d="M32 16V32L40 40" stroke="#3B82F6" stroke-width="3"
+                                        stroke-linecap="round" />
+                                    <defs>
+                                        <linearGradient id="gradient1" x1="0" y1="0" x2="64" y2="64">
+                                            <stop offset="0%" stop-color="#3B82F6" />
+                                            <stop offset="100%" stop-color="#60A5FA" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h3 class="service-title-front">Gestión de Citas con IA</h3>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <h3 class="service-title-back">Gestión de Citas con IA</h3>
+                            <p class="service-description">Tu agenda llena sola: reservas online 24/7, recordatorios
+                                automáticos vía WhatsApp y confirmaciones que eliminan los no-shows de raíz.</p>
+                            <div class="service-features">
+                                <span class="feature-tag">WhatsApp</span>
+                                <span class="feature-tag">24/7</span>
+                                <span class="feature-tag">No-shows -73%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card-flip">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="service-icon">
+                                <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                                    <rect x="12" y="20" width="40" height="28" rx="4" stroke="url(#gradient2)"
+                                        stroke-width="2" />
+                                    <path d="M20 32H44M20 40H36" stroke="#3B82F6" stroke-width="2"
+                                        stroke-linecap="round" />
+                                    <circle cx="32" cy="12" r="4" fill="#3B82F6" />
+                                    <defs>
+                                        <linearGradient id="gradient2" x1="0" y1="0" x2="64" y2="64">
+                                            <stop offset="0%" stop-color="#3B82F6" />
+                                            <stop offset="100%" stop-color="#60A5FA" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h3 class="service-title-front">Captación de Nuevos Pacientes</h3>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <h3 class="service-title-back">Captación de Nuevos Pacientes</h3>
+                            <p class="service-description">Sistema automatizado que convierte visitantes web en
+                                pacientes reales: anuncios en Google y Meta segmentados para pacientes en Madrid.</p>
+                            <div class="service-features">
+                                <span class="feature-tag">Google Ads</span>
+                                <span class="feature-tag">Meta Ads</span>
+                                <span class="feature-tag">Leads Cualificados</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card-flip">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="service-icon">
+                                <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                                    <path d="M32 8L40 24H24L32 8Z" stroke="url(#gradient3)" stroke-width="2" />
+                                    <circle cx="32" cy="40" r="16" stroke="#3B82F6" stroke-width="2" />
+                                    <path d="M32 32V40M32 40L38 46M32 40L26 46" stroke="#3B82F6" stroke-width="2"
+                                        stroke-linecap="round" />
+                                    <defs>
+                                        <linearGradient id="gradient3" x1="0" y1="0" x2="64" y2="64">
+                                            <stop offset="0%" stop-color="#3B82F6" />
+                                            <stop offset="100%" stop-color="#60A5FA" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h3 class="service-title-front">Reactivación de Pacientes Inactivos</h3>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <h3 class="service-title-back">Reactivación de Pacientes Inactivos</h3>
+                            <p class="service-description">Recupera pacientes que llevan meses sin volver. Campañas
+                                automáticas personalizadas por tratamiento, edad y última visita.</p>
+                            <div class="service-features">
+                                <span class="feature-tag">Email</span>
+                                <span class="feature-tag">SMS</span>
+                                <span class="feature-tag">Retención +40%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card-flip">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="service-icon">
+                                <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                                    <rect x="16" y="16" width="32" height="32" rx="4" stroke="url(#gradient4)"
+                                        stroke-width="2" />
+                                    <path d="M28 28L36 36M36 28L28 36" stroke="#3B82F6" stroke-width="2"
+                                        stroke-linecap="round" />
+                                    <circle cx="32" cy="32" r="8" stroke="#60A5FA" stroke-width="2" />
+                                    <defs>
+                                        <linearGradient id="gradient4" x1="0" y1="0" x2="64" y2="64">
+                                            <stop offset="0%" stop-color="#3B82F6" />
+                                            <stop offset="100%" stop-color="#60A5FA" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h3 class="service-title-front">Reputación Online Dental</h3>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <h3 class="service-title-back">Reputación Online Dental</h3>
+                            <p class="service-description">Automatiza la solicitud de reseñas de Google tras cada
+                                visita. Más valoraciones = más confianza = más pacientes nuevos que te eligen a ti.</p>
+                            <div class="service-features">
+                                <span class="feature-tag">Google Reviews</span>
+                                <span class="feature-tag">IA</span>
+                                <span class="feature-tag">Automatizado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card-flip">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="service-icon">
+                                <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                                    <circle cx="20" cy="20" r="8" stroke="url(#gradient5)" stroke-width="2" />
+                                    <circle cx="44" cy="20" r="8" stroke="#3B82F6" stroke-width="2" />
+                                    <circle cx="32" cy="44" r="8" stroke="#60A5FA" stroke-width="2" />
+                                    <path d="M26 26L38 38M38 26L26 38" stroke="#3B82F6" stroke-width="1.5" />
+                                    <defs>
+                                        <linearGradient id="gradient5" x1="0" y1="0" x2="64" y2="64">
+                                            <stop offset="0%" stop-color="#3B82F6" />
+                                            <stop offset="100%" stop-color="#60A5FA" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h3 class="service-title-front">Marketing Digital Dental</h3>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <h3 class="service-title-back">Marketing Digital Dental</h3>
+                            <p class="service-description">Campañas de pago hiper-segmentadas para atraer pacientes en
+                                Madrid interesados en ortodoncia, implantes, estética dental y más.</p>
+                            <div class="service-features">
+                                <span class="feature-tag">Segmentación</span>
+                                <span class="feature-tag">Madrid</span>
+                                <span class="feature-tag">ROI Medible</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card-flip">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="service-icon">
+                                <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                                    <path d="M12 44L20 28L28 36L36 24L44 32L52 20" stroke="url(#gradient6)"
+                                        stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <circle cx="52" cy="20" r="3" fill="#3B82F6" />
+                                    <rect x="8" y="48" width="48" height="8" rx="2" fill="#60A5FA" opacity="0.3" />
+                                    <defs>
+                                        <linearGradient id="gradient6" x1="0" y1="0" x2="64" y2="64">
+                                            <stop offset="0%" stop-color="#3B82F6" />
+                                            <stop offset="100%" stop-color="#60A5FA" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h3 class="service-title-front">Dashboard de Pacientes</h3>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <h3 class="service-title-back">Dashboard de Pacientes</h3>
+                            <p class="service-description">Panel de control en tiempo real con KPIs clave: nuevos
+                                pacientes por canal, tasa de retención, coste por paciente captado y ROI de cada
+                                campaña.</p>
+                            <div class="service-features">
+                                <span class="feature-tag">Tiempo Real</span>
+                                <span class="feature-tag">KPIs</span>
+                                <span class="feature-tag">ROI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="beneficios">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">¿Por qué <span class="gradient-text">Sabra Agency</span>?</h2>
+                <p class="section-subtitle">Resultados medibles para tu clínica desde el primer mes</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card glass-card">
+                    <div class="benefit-number">01</div>
+                    <h3>Agenda Siempre Llena</h3>
+                    <p>Nunca más una silla vacía. Nuestro sistema llena huecos automáticamente con pacientes reales de
+                        Madrid.</p>
+                </div>
+                <div class="benefit-card glass-card">
+                    <div class="benefit-number">02</div>
+                    <h3>Pacientes que Vuelven</h3>
+                    <p>Recordatorios y campañas de reactivación automáticas que convierten visitas únicas en pacientes
+                        de por vida.</p>
+                </div>
+                <div class="benefit-card glass-card">
+                    <div class="benefit-number">03</div>
+                    <h3>Más Tiempo para Tratar</h3>
+                    <p>Elimina el tiempo perdido en llamadas, confirmaciones y gestión. Tú te centras en los pacientes,
+                        el sistema hace el resto.</p>
+                </div>
+                <div class="benefit-card glass-card">
+                    <div class="benefit-number">04</div>
+                    <h3>Reputación que Convierte</h3>
+                    <p>Más reseñas en Google = más confianza = más pacientes que te eligen a ti antes que a la
+                        competencia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contacto">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">¿Cuántos pacientes estás perdiendo cada mes?</h2>
+                <p class="cta-subtitle">Cada día sin un sistema automatizado es un paciente que elige otra clínica.
+                    Solicita tu diagnóstico gratuito y descubrimos juntos cuánto puedes crecer.</p>
+                <a href="#contacto" class="btn-primary btn-large">Quiero Mi Diagnóstico Gratuito</a>
+                <p class="cta-note">✓ Sin compromiso ✓ Exclusivo para Madrid ✓ Resultados desde el mes 1</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-form-wrapper">
+                <div class="form-header">
+                    <h2 class="form-title">Solicita tu Diagnóstico Digital Gratuito</h2>
+                    <p class="form-subtitle">Rellena el formulario y en menos de 24 horas te contactamos con un análisis
+                        personalizado para tu clínica dental en Madrid</p>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo *</label>
+                            <input type="text" id="nombre" name="nombre" required placeholder="Ej: Dr. García López">
+                        </div>
+                        <div class="form-group">
+                            <label for="clinica">Nombre de la Clínica *</label>
+                            <input type="text" id="clinica" name="clinica" required
+                                placeholder="Ej: Clínica Dental Norte">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="telefono">Teléfono *</label>
+                            <input type="tel" id="telefono" name="telefono" required placeholder="Ej: +34 600 000 000">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="Ej: tu@clinica.com">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">¿Cuál es tu mayor reto ahora mismo? *</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required
+                            placeholder="Ej: Tengo muchos no-shows, me cuesta captar pacientes nuevos, la gestión me quita demasiado tiempo..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary btn-large">Quiero Mi Diagnóstico Gratuito</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="images/logo-blanco.png" alt="Sabra Agency Logo" class="footer-logo-img">
+                        <span>Sabra Agency</span>
+                    </div>
+                    <p class="footer-description">Automatización inteligente para clínicas dentales en Madrid. Más
+                        pacientes, menos gestión, resultados desde el mes 1.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#servicios">Gestión de Citas con IA</a></li>
+                        <li><a href="#servicios">Captación de Pacientes</a></li>
+                        <li><a href="#servicios">Reactivación de Inactivos</a></li>
+                        <li><a href="#servicios">Reputación Online</a></li>
+                        <li><a href="#servicios">Marketing Digital Dental</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#beneficios">Sobre Nosotros</a></li>
+                        <li><a href="#casos">Resultados</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="mailto:contacto@sabraagency.com">contacto@sabraagency.com</a></li>
+                        <li><a href="tel:+34900000000">+34 900 000 000</a></li>
+                        <li>Madrid, España</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sabra Agency. Todos los derechos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Privacidad</a>
+                    <a href="#">Términos</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

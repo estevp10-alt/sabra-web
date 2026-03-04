@@ -1,0 +1,66 @@
+✅ LOGOS INTEGRADOS - SABRA AGENCY
+==================================
+
+🎉 ¡TUS LOGOS OFICIALES YA ESTÁN EN LA WEB!
+
+📁 LOGOS GUARDADOS:
+------------------
+✓ images/logo-blanco.png (28 KB) - Usado en navbar y footer
+✓ images/logo-negro.png (26 KB) - Disponible para futuras secciones
+
+🎨 DÓNDE SE USAN:
+-----------------
+1. NAVBAR (Superior):
+   - Logo blanco con efecto glow azul
+   - Tamaño: 40px de altura
+   - Efecto hover: Glow más intenso
+
+2. FOOTER (Inferior):
+   - Logo blanco con glow sutil
+   - Tamaño: 32px de altura
+   - Acompañado del texto "Sabra Agency"
+
+✨ EFECTOS APLICADOS:
+--------------------
+✓ Drop shadow con color azul eléctrico (#3B82F6)
+✓ Efecto hover que intensifica el glow
+✓ Transiciones suaves (0.3s)
+✓ Optimizado para retina displays
+
+🚀 CÓMO VER TU WEB:
+------------------
+1. Abre: Desktop/LANDING ANT/index.html
+2. Haz doble clic
+3. ¡Verás tu logo oficial en acción!
+
+💡 PERSONALIZACIÓN ADICIONAL:
+-----------------------------
+Si quieres cambiar el tamaño del logo:
+   → Abre styles.css
+   → Busca ".logo-img" (línea ~150)
+   → Cambia "height: 40px" por el tamaño que prefieras
+   → Guarda y recarga
+
+Si quieres usar el logo negro en alguna sección:
+   → Abre index.html
+   → Cambia "logo-blanco.png" por "logo-negro.png"
+   → Útil si añades secciones con fondo claro
+
+📋 ARCHIVOS ACTUALIZADOS:
+------------------------
+✓ index.html - Logo integrado en navbar y footer
+✓ styles.css - Estilos para logos con efectos glow
+✓ images/logo-blanco.png - Logo principal (fondo oscuro)
+✓ images/logo-negro.png - Logo alternativo (fondo claro)
+
+🎯 RESULTADO:
+-------------
+Tu landing page ahora tiene:
+✅ Logo oficial de Sabra Agency
+✅ Efecto glow premium con tu color azul eléctrico
+✅ Responsive (se adapta a mobile)
+✅ Optimizado para todos los navegadores
+
+🔥 ¡TU WEB ESTÁ 100% LISTA CON TU IDENTIDAD VISUAL!
+
+Próximo paso: Abre index.html y disfruta del resultado 🚀

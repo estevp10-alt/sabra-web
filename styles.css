@@ -660,6 +660,8 @@ h3 {
     gap: 24px;
     padding: 32px;
     transition: all 0.3s ease;
+    transform: rotateY(0deg);
+    z-index: 2;
 }
 
 /* Photo variant of the front card */
@@ -747,6 +749,9 @@ h3 {
     overflow: hidden;
     background: rgba(10, 12, 18, 0.96) !important; /* Dark solid background for readability */
     border: 1px solid rgba(59, 130, 246, 0.25) !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    z-index: 1;
 }
 
 .service-title-back {

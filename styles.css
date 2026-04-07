@@ -740,10 +740,10 @@ h3 {
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 12px;
-    /* Override glass-card padding to give content more room */
-    padding: 20px 24px;
+    justify-content: flex-start;
+    gap: 16px;
+    /* Override glass-card padding to give content more room at the top */
+    padding: 40px 24px 20px 24px;
     overflow: hidden;
     background: rgba(10, 12, 18, 0.96) !important; /* Dark solid background for readability */
     border: 1px solid rgba(59, 130, 246, 0.25) !important;

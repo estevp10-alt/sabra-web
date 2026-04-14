@@ -242,7 +242,10 @@ if (contactForm) {
 }
 
 // ===== SCROLL REVEAL ANIMATION =====
-const revealElements = document.querySelectorAll('.glass-card, .benefit-card');
+// IMPORTANT: Exclude .service-card-back from reveal animation.
+// Those elements have class 'glass-card' but are rotated 180deg and never
+// directly enter the viewport, causing a permanent opacity:0 skeleton bug.
+const revealElements = document.querySelectorAll('.benefit-card');
 revealElements.forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(30px)';

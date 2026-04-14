@@ -616,13 +616,13 @@ h3 {
 /* ===== SERVICES GRID & FLIP CARDS ===== */
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 32px;
 }
 
 .service-card-flip {
     perspective: 1000px;
-    height: 320px;
+    height: 460px;
 }
 
 .service-card-inner {
@@ -640,6 +640,8 @@ h3 {
 .service-card-front,
 .service-card-back {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
@@ -658,6 +660,63 @@ h3 {
     gap: 24px;
     padding: 32px;
     transition: all 0.3s ease;
+    transform: rotateY(0deg);
+    z-index: 2;
+}
+
+/* Photo variant of the front card */
+.service-card-photo {
+    padding: 0;
+    gap: 0;
+    background: #000;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), filter 0.6s ease;
+    filter: brightness(0.75) saturate(1.1);
+}
+
+.service-card-flip:hover .service-photo {
+    transform: scale(1.05);
+    filter: brightness(0.4) saturate(0.8);
+}
+
+.service-photo-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 28px 28px 24px;
+    background: linear-gradient(to top, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.6) 60%, rgba(0,0,0,0) 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    transition: opacity 0.4s ease;
+}
+
+.service-card-flip:hover .service-photo-overlay {
+    opacity: 0;
+}
+
+.service-title-photo {
+    color: #ffffff;
+    font-size: 1.35rem;
+    font-weight: 700;
+    line-height: 1.25;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+
+.service-hint {
+    font-size: 0.78rem;
+    color: rgba(255, 255, 255, 0.65);
+    font-weight: 500;
+    letter-spacing: 0.01em;
 }
 
 .service-card-front:hover {
@@ -683,34 +742,43 @@ h3 {
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 16px;
+    /* Override glass-card padding to give content more room at the top */
+    padding: 40px 24px 20px 24px;
+    overflow: hidden;
+    background: rgba(10, 12, 18, 0.96) !important; /* Dark solid background for readability */
+    border: 1px solid rgba(59, 130, 246, 0.25) !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    z-index: 1;
 }
 
 .service-title-back {
     color: var(--primary-400);
-    font-size: 1.25rem;
+    font-size: 1.125rem;
+    line-height: 1.3;
 }
 
 .service-description {
     color: var(--text-secondary);
-    font-size: 0.95rem;
-    line-height: 1.6;
+    font-size: 0.875rem;
+    line-height: 1.55;
 }
 
 .service-features {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 8px;
+    gap: 6px;
+    margin-top: 4px;
 }
 
 .feature-tag {
-    padding: 6px 12px;
+    padding: 5px 10px;
     background: rgba(59, 130, 246, 0.15);
     border: 1px solid rgba(59, 130, 246, 0.3);
     border-radius: 6px;
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     color: var(--primary-300);
     font-weight: 500;
 }
@@ -1035,7 +1103,7 @@ h3 {
     }
 
     .service-card-flip {
-        height: 280px;
+        height: 400px;
     }
 
     .particle:nth-child(n+20) {
